@@ -10,7 +10,7 @@ The project created a small image processing system where a series of images are
 An image process request contains an in/source path containing the image, an out/destination path to store the generated image, and a series of effects that are to be applied to the image. A request is simulated as a single string in .json format, and Package json is used to decode the request. The system reads requests from os.Stdin and write the processed image back to the out path.
 
 
-![image](https://raw.githubusercontent.com/luke-wz-wang/Post_Img/master/image-process-sys.png?token=AMHUBUEQXKJ4EVOZJH76GEC64MMXI)
+![image](https://github.com/luke-wz-wang/Post_Img/blob/master/image-process-sys.png?raw=true)
 
 
 These reader goroutines will read in .json format strings from os.Stdin in parallel and finish the preparation stage of the image processing. The preparation stage includes loading and initializing parts. The loading part reads the image file with .png decoder from Package image/png and instantiate an Image structure with the decoced .png image
